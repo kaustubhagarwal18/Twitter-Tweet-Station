@@ -1,0 +1,6 @@
+  url1 = '​http://www.timeanddate.com/weather/india/greater-noida​';
+  writeChannelID = [73580];
+  writeAPIKey = 'DXSTB4T2K9165MJS';
+  tempF = urlfilter(url1, '<div class=h2>');
+  tempC = (5/9)*(tempF-32); display(tempC, 'Temperature in Noida');
+  thingSpeakWrite(writeChannelID, tempC, 'Writekey', writeAPIKey); 
