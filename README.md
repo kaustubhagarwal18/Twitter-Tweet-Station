@@ -3,3 +3,6 @@ Then according to the data a twitter account tweets informing everyone of the ch
 
 The channel
 https://thingspeak.com/channels/73580/
+
+the twitter account 
+https://twitter.com/lazykaustubh
