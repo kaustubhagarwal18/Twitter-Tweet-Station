@@ -1,6 +1,6 @@
-  url1 = '​http://www.timeanddate.com/weather/india/greater-noida​';
-  writeChannelID = [73580];
-  writeAPIKey = 'DXSTB4T2K9165MJS';
-  tempF = urlfilter(url1, '<div class=h2>');
-  tempC = (5/9)*(tempF-32); display(tempC, 'Temperature in Noida');
+  url1 = '​http://www.timeanddate.com/weather/india/greater-noida​'; // address of the website
+  writeChannelID = [73580]; // channel id
+  writeAPIKey = ''; // It's Write key
+  tempF = urlfilter(url1, '<div class=h2>');// the html tag to extract the information
+  tempC = (5/9)*(tempF-32); display(tempC, 'Temperature in Noida'); 
   thingSpeakWrite(writeChannelID, tempC, 'Writekey', writeAPIKey); 
